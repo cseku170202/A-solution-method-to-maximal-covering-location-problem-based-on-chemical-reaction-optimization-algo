@@ -1,0 +1,13 @@
+Steps to build B700 dataset.
+
+1. First collect the dataset from the link--> http://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/pmed32.txt
+2. Save the dataset to a text document named "pmed32.txt"
+3. Run the pyhton file named "coordinate_values_creation". It will create another text document named "B700_coord.txt"
+4. Then process the data of "B700_coord.txt". Remove the alphabatic word and symbol(: and ,) from the text document and keep only the numbers. The numbers should be in two different columns. First and second column represent the x and y coordinate value respectively.
+5. Then extract the first column from "B700_coord.txt" and keep it to a new text document named "B700_coord_X.txt".
+6. Then extract the second column from "B700_coord.txt" and keep it to a new text document named "B700_coord_Y.txt".
+7. Run the c++ source file named "Problem Set Generator" to generate the distance matrix values. It will create a new text document named "B700_distance.txt".
+8. Run the python file named "random_value_generator" to generate the demand values. It will create a new text document named "B700_demand.txt".
+9. The "B700_distance.txt" and "B700_demand.txt" will be the input of our main program of MCLP.
+
+
